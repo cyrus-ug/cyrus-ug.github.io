@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure the path is correct -->
+</head>
+<body>
+    <header>
+        <nav class="nav"> <!-- Add class "nav" for styling consistency -->
+            <div class="logo">Kids Campus Nursery and Primary School</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contactus.html">Contacts</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu(this)">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+          
+          <div class="nav-overlay" id="nav-overlay">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contactus.html">Contacts</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+          </div>
+          
+          <script>
+            function toggleMenu(icon) {
+              icon.classList.toggle("active");
+              const navOverlay = document.getElementById("nav-overlay");
+              navOverlay.classList.toggle("active");
+            }
+          </script>
+    </header>
+
+    <main class="container">
+        <h2>School News and Updates</h2>
+        <p>Stay informed about the latest news, events, and announcements from Kids Campus Nursery and Primary School.</p>
+
+        <!-- News Articles Section -->
+        <section class="news-articles">
+            <!-- News Item 1 -->
+            <article class="news-item">
+                <h3>Science Fair 2024 Success</h3>
+                <p class="date">March 10, 2024</p>
+                <p>The annual Science Fair was a huge success, with students showcasing innovative projects across various fields. Congratulations to all participants!</p>
+                <a href="science-fair.html">Read more</a>
+            </article>
+
+            <!-- News Item 2 -->
+            <article class="news-item">
+                <h3>New Playground Facilities</h3>
+                <p class="date">February 20, 2024</p>
+                <p>We're excited to announce the addition of new playground equipment to enhance outdoor activities. The playground is now open for all students to enjoy.</p>
+                <a href="playground-update.html">Read more</a>
+            </article>
+
+            <!-- News Item 3 -->
+            <article class="news-item">
+                <h3>Parent-Teacher Conference Scheduled</h3>
+                <p class="date">January 15, 2024</p>
+                <p>Our upcoming Parent-Teacher Conference is scheduled for April 5th. This is an opportunity for parents to discuss their child's progress with teachers.</p>
+                <a href="pt-conference.html">Read more</a>
+            </article>
+
+            <!-- Additional news items can follow the same structure -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kids Campus Nursery and Primary School. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

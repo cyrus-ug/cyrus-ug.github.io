@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        /* General section styling */
+section {
+    text-align: left; /* Aligns all text to the left */
+    margin: 20px 0; /* Adds spacing between sections */
+    padding: 10px; /* Adds padding within each section */
+}
+
+/* Section titles styling */
+section h3 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* List styling for the values section */
+.values ul, .required-documents ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.values li, .required-documents li {
+    margin-bottom: 10px;
+}
+
+/* Styling for emphasized text */
+li strong, p strong {
+    font-weight: bold;
+}
+
+li u {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav"> <!-- Add class for styling consistency -->
+            <div class="logo">Kids Campus Nursery and Primary School</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contactus.html">Contacts</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu(this)">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+          
+          <div class="nav-overlay" id="nav-overlay">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contactus.html">Contacts</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+          </div>
+          
+          <script>
+            function toggleMenu(icon) {
+              icon.classList.toggle("active");
+              const navOverlay = document.getElementById("nav-overlay");
+              navOverlay.classList.toggle("active");
+            }
+          </script>
+    </header>
+
+    <main class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Kids Campus Nursery and Primary School. Here’s a little about who we are and what we believe in.</p>
+
+         <!-- Motto Section -->
+         <section class="motto">
+            <h3>School Motto</h3>
+            <p>Learn, Play and Grow together.</p>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission">
+            <h3>School Mission</h3>
+            <p>Developing excellent and affordable education geared towards developing a holistic child.</p>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision">
+            <h3>School Vision</h3>
+            <p>Meeting the growth needs of a child.</p>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values">
+            <h3>School Values</h3>
+            <ul>
+                <li><strong>God fearing:</strong> We honor each student’s uniqueness and foster a culture of mutual respect.</li>
+                <li><strong>Transparency:</strong> Integrity and honesty guide all our actions and decisions.</li>
+                <li><strong>Accountability:</strong> We believe in building strong partnerships with families and the community.</li>
+                <li><strong>Result Oriented:</strong> We are committed to achieving excellence across academics, arts, and personal growth.</li>
+                <li><strong>Patience:</strong> We are dedicated to nurturing excellence in academics, arts, and character development.</li>
+            </ul>
+        </section>
+
+        <!-- History Section -->
+        <section class="history">
+            <h3>Our History</h3>
+            <p>Founded in 2000, Kids Campus Nursery and Primary School has been committed to excellence in early childhood education for over two decades. Our journey began with a small class of 15 students and has grown to a vibrant community of learners from diverse backgrounds.</p>
+        </section>
+
+        <!-- Educational Approach Section -->
+        <section class="approach">
+            <h3>Our Educational Approach</h3>
+            <p>We combine modern teaching techniques with traditional values to provide a balanced education that nurtures the whole child. Our curriculum includes a mix of academics, arts, and physical education to support intellectual, social, and emotional growth.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kids Campus Nursery and Primary School. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

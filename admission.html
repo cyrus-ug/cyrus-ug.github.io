@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Kids Campus Nursery and Primary School</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General section styling */
+.admission-process, .eligibility, .required-documents {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Section headings */
+.admission-process h3,
+.eligibility h3,
+.required-documents h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left; /* Ensures headings are aligned to the left */
+}
+
+/* List styles for ordered and unordered lists */
+.admission-process ol,
+.required-documents ul {
+    padding-left: 20px; /* Indent list items */
+    text-align: left; /* Aligns list items to the left */
+}
+
+/* Additional styles */
+.eligibility p {
+    text-align: left; /* Aligns the paragraph to the left */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">WEJULI CYRUS</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contactus.html">Contacts</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu(this)">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+          
+          <div class="nav-overlay" id="nav-overlay">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contactus.html">Contacts</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+          </div>
+          
+          <script>
+            function toggleMenu(icon) {
+              icon.classList.toggle("active");
+              const navOverlay = document.getElementById("nav-overlay");
+              navOverlay.classList.toggle("active");
+            }
+          </script>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to the Admission Page</h2>
+            <p>We're excited that you're considering Kids Campus Nursery and Primary School for your child's education. Here you'll find all the details you need about our admission process.</p>
+        </section>
+
+        <section class="admission-process">
+            <h3>Admission Process</h3>
+            <ol>
+                <li>Fill out the online application form or download the form below.</li>
+                <li>Submit the completed form along with required documents.</li>
+                <li>Attend an interview with the school’s admission committee (if applicable).</li>
+                <li>Receive admission confirmation.</li>
+                <li><strong>We do not receive any kind of cash at school. All payments should be done using the School Pay Systems.</strong></li>
+                <li><u><strong>Note:</strong></u> After submitting the fully completed form to the school office, you will get a pupil's School Pay code for you to pay the school fees.</li>
+            </ol>
+        </section>
+
+        <section class="eligibility">
+            <h3>Eligibility Criteria</h3>
+            <p>We accept students from ages 3 to 12 for our Nursery and Primary School sections. Each applicant should meet age requirements as specified by the Ministry of Education.</p>
+        </section>
+
+        <section class="required-documents">
+            <h3>Required Documents</h3>
+            <ul>
+                <li>Birth Certificate</li>
+                <li>Passport-sized Photos</li>
+                <li>Previous School Records (if applicable)</li>
+                <li>Medical Certificate</li>
+                <li>Completed Application Form</li>
+            </ul>
+        </section>
+
+        <section class="download-form">
+            <h3>Download Admission Form</h3>
+            <p>Click the link below to download the admission form. Please fill it out and bring it to our office for submission.</p>
+            <a href="Admission-form.pdf" download class="btn">Download Admission Form</a>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <h2>BAIT/21D/U/J0518</h2>
+            <p>&copy; 2024 Kids Campus Nursery and Primary School. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>|</span>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>
